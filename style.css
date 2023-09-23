@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+:root{
+    --purple500:#281154;
+    --purple300:#270082;
+    --purple600:#1b0058;
+    --red600:#dc0000;
+    --body:#f9f6ff;
+}
+html,body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 300;
+    line-height: 1.4;
+    scroll-behavior: smooth;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+ul{
+    list-style:none;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+header{
+    background-color: var(--purple300);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 5px 5px 5px rgba(1, 1, 1, 0.2s);
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 20px 0;
+}
+nav ul{
+    display: flex;
+    gap: 20px;
+}
+.logo{
+    font-size: 32px;
+    font-weight: 600;
+}
+nav ul li{
+    border-bottom: 2px solid transparent;
+    transition: 0.2s ease-in;
+}
+nav ul li:hover{
+    border-bottom: 2px solid white;
+    transition: 0.2s ease-in;
+}
+
+.main_section{
+    background-image: url(t1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: grid;
+    color: white;
+    place-items: center;
+    text-align: center;
+    
+}
+.main_section .container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.main_section h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 500;
+}
+.main_section h3{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 300;
+}
+.main_section p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: medium;
+    font-weight: 300;
+}
+.music_section{
+    background-color: var(--purple500);
+    padding-top: 30px;
+    height: 60vh;
+    display: grid;
+    color: white;
+    place-items: center;
+    text-align: center;
+}
+.music_section h4{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 300;
+}
+button{
+    background-color: #dc0000;
+    padding: 10px;
+    border-radius: 5px;
+    border-color: black;
+    box-shadow: 2px 3px 4px rgba(1, 1, 1, 0.2s);
+    
+}
+.main_section .container img{
+    box-shadow: 5px 5px 5px rgba(1, 1, 1, 0.5s);
+}
+.aftermusic_section{
+    padding-top: 250px;
+    height: 60vh;
+    display: grid;
+    color: black;
+    place-items: center;
+    text-align: center;
+}
+.blue{
+ background-color:var(--purple500);
+ color: white;
+}
+
+.mac_section{
+    align-items: center;
+    justify-content: center;
+}
+.mac_section .macimg{
+    padding: 20px 340px;
+}
+.gift_section{
+    display: flex;
+    justify-content: center;
+    margin: 20px 50px;
+    gap: 50px;
+}
+.blue:hover{
+    opacity: 0.5s;
+    transition: 0.2s ease-in-out;
+    box-shadow: 5px 5px 5px rgba(1, 1, 1, 0.2s);
+}
+button:hover{
+    opacity: 0.5s;
+    transition: 0.2s ease-in-out;
+    box-shadow: 5px 5px 5px rgba(1, 1, 1, 0.2s);
+}
+.footer_section{
+    background-color:var(--purple600);
+}
+.footer_section .container{
+    display: flex;
+    color: #f9f6ff;
+    gap: 20px;
+    justify-content: space-between;
+    padding: 10px;
+}
+.footer_section h3{
+    font-weight: 400;
+}
+.footer_section h4{
+    font-weight: 300;
+}
